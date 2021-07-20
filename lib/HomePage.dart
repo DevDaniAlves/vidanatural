@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:vida_natural_project/telas/telacadastro.dart';
 import 'package:vida_natural_project/telas/telafinanceiro.dart';
 import 'package:vida_natural_project/telas/telavenda.dart';
 
 import 'main.dart';
 import 'telas/telaestoque.dart';
+import 'telas/telatabela.dart';
 
 class TelaPosLogin extends StatefulWidget {
   @override
@@ -89,7 +91,7 @@ class listaTela extends StatelessWidget {
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => telaestoque()));
+                MaterialPageRoute(builder: (context) => telacadastro()));
           }),
       ListTile(
           leading: Icon(
@@ -104,7 +106,7 @@ class listaTela extends StatelessWidget {
           trailing: Icon(Icons.keyboard_arrow_right),
           onTap: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => telaestoque()));
+                MaterialPageRoute(builder: (context) => telatabela()));
           }),
     ]);
   }
